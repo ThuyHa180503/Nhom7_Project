@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49BE79A0-8640-496A-9395-38BF8567DA82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nhom7_Project</RootNamespace>
+    <AssemblyName>Nhom7_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="form\CaNhanBCSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\CaNhanBCSC.Designer.cs">
+      <DependentUpon>CaNhanBCSC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CaNhanDkiLichTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\CaNhanDkiLichTH.Designer.cs">
+      <DependentUpon>CaNhanDkiLichTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CaNhanMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\CaNhanMe.Designer.cs">
+      <DependentUpon>CaNhanMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmPhongMay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmPhongMay.Designer.cs">
+      <DependentUpon>frmPhongMay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmLichTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmLichTH.Designer.cs">
+      <DependentUpon>frmLichTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\QuanLyCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\QuanLyCa.Designer.cs">
+      <DependentUpon>QuanLyCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\QuanLyLichTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\QuanLyLichTH.Designer.cs">
+      <DependentUpon>QuanLyLichTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\QuanLyPhongMay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\QuanLyPhongMay.Designer.cs">
+      <DependentUpon>QuanLyPhongMay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="form\QuanLyPhongMay.resx">
+      <DependentUpon>QuanLyPhongMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Class\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\icons8-add-25.png" />
+    <Content Include="images\icons8-classroom-25.png" />
+    <Content Include="images\icons8-delete-25.png" />
+    <Content Include="images\icons8-down-25.png" />
+    <Content Include="images\icons8-edit-25.png" />
+    <Content Include="images\icons8-edit-property-25.png" />
+    <Content Include="images\icons8-error-25.png" />
+    <Content Include="images\icons8-help-25.png" />
+    <Content Include="images\icons8-home-25.png" />
+    <Content Include="images\icons8-logout-25.png" />
+    <Content Include="images\icons8-manager-25.png" />
+    <Content Include="images\icons8-me-25.png" />
+    <Content Include="images\icons8-menu-25.png" />
+    <Content Include="images\icons8-person-20.png" />
+    <Content Include="images\icons8-report-25.png" />
+    <Content Include="images\icons8-schedule-25.png" />
+    <Content Include="images\icons8-search-25.png" />
+    <Content Include="images\icons8-settings-25.png" />
+    <Content Include="images\icons8-task-25.png" />
+    <Content Include="images\icons8-team-25.png" />
+    <Content Include="images\icons8-time-machine-25.png" />
+    <Content Include="images\icons8-top-25.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
